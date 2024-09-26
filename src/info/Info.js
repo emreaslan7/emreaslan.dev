@@ -106,6 +106,7 @@ export const info = {
       live: "https://securify-0.vercel.app/",
       source: "https://github.com/emreaslan7/securify",
       image: mock9,
+      tags: ["Hackhathon", "Web3", "Nextjs"],
     },
     {
       title: "WIFG",
@@ -114,6 +115,7 @@ export const info = {
       live: "https://wifg-solana-explorer.vercel.app/",
       source: "https://github.com/emreaslan7/wifg-solana-explorer",
       image: mock8,
+      tags: ["Web3", "Nextjs"],
     },
     {
       title: "Twitella",
@@ -122,6 +124,7 @@ export const info = {
       live: "https://twitella.vercel.app/",
       source: "https://github.com/emreaslan7/twitella",
       image: mock7,
+      tags: ["Web3", "Nextjs"],
     },
     {
       title: "MetaverseMarketplace",
@@ -130,6 +133,7 @@ export const info = {
       live: "https://nftmarketplacepolygon.vercel.app/",
       source: "https://github.com/emreaslan7/nftmarketplacepolygon",
       image: mock6,
+      tags: ["Web3", "Nextjs"],
     },
     {
       title: "RoboPunksNFT",
@@ -138,6 +142,7 @@ export const info = {
       live: "https://robo-punks-nft-git-master-emreaslan7.vercel.app/",
       source: "https://github.com/emreaslan7/RoboPunksNFT-mintingwebsite",
       image: mock5,
+      tags: ["Web3", "Nextjs"],
     },
     {
       title: "HearthHue",
@@ -148,6 +153,7 @@ export const info = {
       live: "https://hearth-hue.vercel.app/",
       source: "https://github.com/emreaslan7/ether-donation-dapp",
       image: mock1,
+      tags: ["Web3", "Nextjs"],
     },
     {
       title: "ETHscanSimply",
@@ -158,6 +164,7 @@ export const info = {
       live: "https://ethscansimply.vercel.app/",
       source: "https://github.com/emreaslan7/EthScanSimply",
       image: mock2,
+      tags: ["Web3", "Nextjs"],
     },
     {
       title: "Spend Bitcoin",
@@ -169,6 +176,7 @@ export const info = {
       live: "https://spend-bitcoin.vercel.app/",
       source: "https://github.com/emreaslan7/spend-bitcoin",
       image: mock3,
+      tags: ["Web3", "Nextjs"],
     },
     {
       title: "Removiect",
@@ -180,6 +188,7 @@ export const info = {
       live: "https://removiect.netlify.app/",
       source: "https://github.com/emreaslan7/react-movie",
       image: mock4,
+      tags: ["Hackhathon", "Web3", "Nextjs"],
     },
     // {
     //     title: "Project 5",

@@ -41,7 +41,6 @@ body {
     --radius: 0.5rem;
   }
   .dark {
-    /* --background: 240 10% 3.9%; */
     --background: #1f1f1f;
     --foreground: 0 0% 98%;
     --card: 240 10% 3.9%;

@@ -3,7 +3,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="flex justify-center items-center py-6 opacity-70 w-full">
+    <footer className="flex justify-center items-center pb-3 pt-12 opacity-70 w-full">
       <p>
         created &hearts; by{" "}
         <Link

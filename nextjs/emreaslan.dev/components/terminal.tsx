@@ -10,7 +10,7 @@ function Terminal(props: { text: any }) {
         <FaCircle color="orange" className="h-3 w-3" />
         <FaCircle color="#27C93F" className="h-3 w-3" />
       </div>
-      <div className="py-4 px-6 rounded-b-lg bg-gray-800 text-lg font-mono">
+      <div className="py-4 px-6 rounded-b-lg bg-gray-800 xl:text-2xl text-lg  font-mono">
         {text}
       </div>
     </section>

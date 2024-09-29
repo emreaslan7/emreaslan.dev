@@ -1,11 +1,11 @@
-import articleImg01 from "../img/articles/article01.png";
-import articleImg02 from "../img/articles/article02.png";
-import articleImg03 from "../img/articles/article03.png";
-import articleImg04 from "../img/articles/article04.png";
-import articleImg05 from "../img/articles/article05.png";
-import articleImg06 from "../img/articles/article06.png";
-import articleImg07 from "../img/articles/article07.png";
-import articleImg08 from "../img/articles/article08.png";
+import articleImg01 from "@/info/img/articles/article01.png";
+import articleImg02 from "@/info/img/articles/article02.png";
+import articleImg03 from "@/info/img/articles/article03.png";
+import articleImg04 from "@/info/img/articles/article04.png";
+import articleImg05 from "@/info/img/articles/article05.png";
+import articleImg06 from "@/info/img/articles/article06.png";
+import articleImg07 from "@/info/img/articles/article07.png";
+import articleImg08 from "@/info/img/articles/article08.png";
 
 export const articles = [
   {

@@ -15,7 +15,7 @@ function AboutPage() {
           </span>{" "}
           cat about {firstName}
         </p>
-        <p className="text-gray-300">
+        <p className="text-gray-300 lg:leading-9">
           <span className="text-teal-400">
             about{firstName} <span className="text-green-500">(main)</span> $
           </span>{" "}

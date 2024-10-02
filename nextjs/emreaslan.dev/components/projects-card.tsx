@@ -2,6 +2,9 @@
 import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+
+import confetti from "canvas-confetti";
+
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { projects } from "@/info/projects";
 
@@ -34,6 +37,35 @@ export function ProjectsCard() {
 
   useOutsideClick(ref, () => setActive(null));
 
+  const handleConfeti = () => {
+    const duration = 5 * 1000;
+    const animationEnd = Date.now() + duration;
+    const defaults = { startVelocity: 30, spread: 360, ticks: 60, zIndex: 0 };
+
+    const randomInRange = (min: number, max: number) =>
+      Math.random() * (max - min) + min;
+
+    const interval = window.setInterval(() => {
+      const timeLeft = animationEnd - Date.now();
+
+      if (timeLeft <= 0) {
+        return clearInterval(interval);
+      }
+
+      const particleCount = 70 * (timeLeft / duration);
+      confetti({
+        ...defaults,
+        particleCount,
+        origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 },
+      });
+      confetti({
+        ...defaults,
+        particleCount,
+        origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 },
+      });
+    }, 250);
+  };
+
   return (
     <>
       <AnimatePresence>
@@ -48,7 +80,7 @@ export function ProjectsCard() {
       </AnimatePresence>
       <AnimatePresence>
         {active && typeof active === "object" ? (
-          <div className="fixed inset-0  grid place-items-center z-[100]">
+          <div className="fixed inset-0  grid place-items-center z-[20]">
             <motion.button
               key={`button-${active.title}-${id}`}
               layout
@@ -72,7 +104,7 @@ export function ProjectsCard() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+              className="w-full max-w-[550px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
             >
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
@@ -81,7 +113,7 @@ export function ProjectsCard() {
                   height={768}
                   src={active.src}
                   alt={active.title}
-                  className="w-full h-[275px] lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-top"
+                  className="w-full h-[240px] lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-top"
                 />
               </motion.div>
 
@@ -152,7 +184,10 @@ export function ProjectsCard() {
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
-            onClick={() => setActive(card)}
+            onClick={() => {
+              card.isHackhathonWinner && handleConfeti();
+              setActive(card);
+            }}
             className="p-4 flex flex-col  hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
           >
             <div className="flex gap-4 flex-col  w-full">
@@ -172,13 +207,6 @@ export function ProjectsCard() {
                 >
                   {card.title}
                 </motion.h3>
-
-                <motion.p
-                  layoutId={`description-${card.description}-${id}`}
-                  className="text-neutral-600 dark:text-neutral-400 text-center md:text-left text-base"
-                >
-                  {card.description}
-                </motion.p>
               </div>
             </div>
           </motion.div>

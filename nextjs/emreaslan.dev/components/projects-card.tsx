@@ -11,7 +11,11 @@ import { projects } from "@/info/projects";
 import ViewOnGithubButton from "./view-on-github-button";
 import TechStackTooltip from "@/components/tech-stack-tooltip";
 
-export function ProjectsCard() {
+type ProjectsCardProps = {
+  selectedTags: string[]; // Yeni prop
+};
+
+export function ProjectsCard({ selectedTags }: ProjectsCardProps) {
   const [active, setActive] = useState<
     (typeof projects)[number] | boolean | null
   >(null);
@@ -65,6 +69,13 @@ export function ProjectsCard() {
       });
     }, 250);
   };
+
+  const filteredProjects = projects.filter((project) => {
+    return (
+      selectedTags.includes("All") ||
+      selectedTags.every((tag) => project.tags.includes(tag))
+    );
+  });
 
   return (
     <>
@@ -126,12 +137,6 @@ export function ProjectsCard() {
                     >
                       {active.title}
                     </motion.h3>
-                    {/* <motion.p
-                      layoutId={`description-${active.description}-${id}`}
-                      className="text-neutral-600 dark:text-neutral-400 text-base"
-                    >
-                      {active.description}
-                    </motion.p> */}
                     <div className="mt-4">
                       <TechStackTooltip tech={active.tech} />
                     </div>
@@ -180,7 +185,7 @@ export function ProjectsCard() {
         ) : null}
       </AnimatePresence>
       <ul className="max-w-4xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 items-start gap-4">
-        {projects.map((card, index) => (
+        {filteredProjects.map((card) => (
           <motion.div
             layoutId={`card-${card.title}-${id}`}
             key={card.title}

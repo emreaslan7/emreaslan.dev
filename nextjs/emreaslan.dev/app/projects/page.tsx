@@ -1,8 +1,16 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { ProjectsCard } from "@/components/projects-card";
-import TechStackTooltip from "@/components/tech-stack-tooltip";
+import FilterTags from "@/components/filter-tags";
+import { projects } from "@/info/projects";
 
 function ProjectsPage() {
+  const [selectedTags, setSelectedTags] = useState<string[]>(["All"]); // Default olarak "All" seçili
+
+  const handleTagChange = (tags: string[]) => {
+    setSelectedTags(tags);
+  };
+
   return (
     <div className="py-10">
       <div className="flex flex-col items-center justify-center mb-10">
@@ -13,8 +21,8 @@ function ProjectsPage() {
           A collection of projects I've worked on
         </p>
       </div>
-
-      <ProjectsCard />
+      <FilterTags onChange={handleTagChange} />
+      <ProjectsCard selectedTags={selectedTags} />
     </div>
   );
 }

@@ -26,7 +26,7 @@ export const projects = [
       );
     },
     source: "https://github.com/emreaslan7/securify",
-    tags: ["Hackhathon", "Web3", "Fullstack", "Circle"],
+    tags: ["Hackathon", "Web3", "Fullstack", "Circle"],
     isHackhathonWinner: true,
     tech: [
       "typescript",
@@ -61,7 +61,7 @@ export const projects = [
     },
     source: "https://github.com/emreaslan7/wifg-solana-explorer",
 
-    tags: ["Hackhathon", "Frontend", "Solana"],
+    tags: ["Hackathon", "Frontend", "Solana"],
     isHackhathonWinner: false,
 
     tech: ["typescript", "nextjs", "tailwindcss", "shadcn", "web3js"],

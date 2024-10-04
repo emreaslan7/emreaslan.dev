@@ -13,7 +13,7 @@ function ProjectsPage() {
 
   return (
     <div className="py-10">
-      <div className="flex flex-col items-center justify-center mb-10">
+      <div className="flex flex-col items-center justify-center">
         <h1 className="text-4xl font-bold text-gray-900 dark:text-slate-300">
           Projects
         </h1>

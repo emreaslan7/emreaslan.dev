@@ -10,6 +10,7 @@ import { IoBookOutline } from "react-icons/io5";
 interface ArticleCardProps {
   title: string;
   description: string;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   image: any;
   link: string;
   readTime: string;
@@ -59,6 +60,7 @@ const ArticlesCard = ({
           <div id="card" className="text-gray-800 dark:text-gray-800">
             <div id="prompt">
               <Image
+                // eslint-disable-next-line @typescript-eslint/no-explicit-any
                 src={image}
                 alt="article image"
                 width={isMobile ? 350 : 500}

@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import { ProjectsCard } from "@/components/projects-card";
 import FilterTags from "@/components/filter-tags";
-import { projects } from "@/info/projects";
 
 function ProjectsPage() {
   const [selectedTags, setSelectedTags] = useState<string[]>(["All"]); // Default olarak "All" seçili
@@ -18,7 +17,7 @@ function ProjectsPage() {
           Projects
         </h1>
         <p className="text-gray-700 dark:text-gray-400 mt-2">
-          A collection of projects I've worked on
+          A collection of projects I have worked on
         </p>
       </div>
       <FilterTags onChange={handleTagChange} />

@@ -14,7 +14,7 @@ function ArticlesPage() {
           Articles
         </h1>
         <p className="text-gray-700 dark:text-gray-400 mt-2">
-          A collection of articles I've written
+          A collection of articles I have written
         </p>
       </div>
       <Container maxWidth="max-w-6xl">

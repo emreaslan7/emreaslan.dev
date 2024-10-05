@@ -17,7 +17,7 @@ export default function Page() {
       />
       <div className="space-y-2">
         <h1 className="font-bold text-2xl text-center md:text-left md:text-3xl lg:text-5xl">
-          Hi, I'm{" "}
+          Hi, I am{" "}
           <span
             className="bg-gradient-to-r from-red-500 to-blue-500 bg-clip-text text-transparent"
             style={{
@@ -31,7 +31,7 @@ export default function Page() {
           <span className="inline-block animate-wave">🤚</span>
         </h1>
         <h2 className="font-bold text-center text-xl md:text-left  md:text-2xl lg:text-3xl">
-          I'm {info.position}
+          I am {info.position}
         </h2>
         <ul className="p-4  space-y-1">
           {info.miniBio.map((bio, index) => (

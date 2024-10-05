@@ -8,7 +8,7 @@ import confetti from "canvas-confetti";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { projects } from "@/info/projects";
 
-import ViewOnGithubButton from "./view-on-github-button";
+import ViewOnGithubButton from "@/components/view-on-github-button";
 import TechStackTooltip from "@/components/tech-stack-tooltip";
 
 type ProjectsCardProps = {
@@ -190,6 +190,7 @@ export function ProjectsCard({ selectedTags }: ProjectsCardProps) {
             layoutId={`card-${card.title}-${id}`}
             key={card.title}
             onClick={() => {
+              // eslint-disable-next-line @typescript-eslint/no-unused-expressions
               card.isHackhathonWinner && handleConfeti();
               setActive(card);
             }}

@@ -1,12 +1,12 @@
 import mock1 from "@/info/img/projects/HearthHue-mockup.png";
-import mock2 from "@/info/img/projects/ETHscanSimply-mockup.png";
-import mock3 from "@/info/img/projects/SpendBitcoin-mockup.png";
-import mock4 from "@/info/img/projects/Removiect-mockup.png";
-import mock5 from "@/info/img/projects/RoboPunksNFT-mockup.png";
-import mock6 from "@/info/img/projects/MetaverseMarketplace-mockup.png";
-import mock7 from "@/info/img/projects/Twitella-mockup.png";
-import mock8 from "@/info/img/projects/WIFG-mockup.png";
-import mock9 from "@/info/img/projects/Securify-mockup.png";
+import mock2 from "@/info/img/projects/ethscansimply-mockup.png";
+import mock3 from "@/info/img/projects/spendbitcoin-mockup.png";
+import mock4 from "@/info/img/projects/removiect-mockup.png";
+import mock5 from "@/info/img/projects/robopunksnft-mockup.png";
+import mock6 from "@/info/img/projects/metaversemarketplace-mockup.png";
+import mock7 from "@/info/img/projects/twitella-mockup.png";
+import mock8 from "@/info/img/projects/wifg-mockup.png";
+import mock9 from "@/info/img/projects/securify-mockup.png";
 
 export const projects = [
   {

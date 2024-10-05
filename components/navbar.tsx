@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import Link from "next/link"; // Next.js Link bileşeni
-import { ThemeSwitchButton } from "./theme-switch-button";
+import { ThemeSwitchButton } from "@/components/theme-switch-button";
 import { info } from "@/info/index";
-import Container from "./container";
+import Container from "@/components/container";
 
 const links = [
   {

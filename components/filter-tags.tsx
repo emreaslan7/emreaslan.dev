@@ -53,7 +53,7 @@ const FilterTags: React.FC<FilterTagsProps> = ({ onChange }) => {
             key={tag}
             className={`text-center border border-teal-500/50 dark:border-gray-600 px-2 py-1 md:text-lg relative md:min-w-[100px] flex justify-center items-center rounded-lg select-none cursor-pointer hover:shadow hover:shadow-red-800 dark:hover:shadow-red-500 ${
               selectedTags.includes(tag)
-                ? `bg-gradient-to-r from-[${colors[0]}] to-[${colors[1]}] text-white` // Seçilen etiketler için gradyan
+                ? `bg-gradient-to-r from-[#92000a] to-[#E9967A] text-white` // Seçilen etiketler için gradyan
                 : "bg-gray-100/50 dark:bg-gray-700"
             }`}
             style={{

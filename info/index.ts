@@ -1,6 +1,6 @@
 import self from "@/info/img/self.png";
 
-export let colors = ["#92000a", "#E9967A"];
+export const colors = ["#92000a", "#E9967A"];
 
 export const info = {
   firstName: "Emre",

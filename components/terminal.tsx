@@ -1,5 +1,6 @@
 import React from "react";
 import { FaCircle } from "react-icons/fa6";
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function Terminal(props: { text: any }) {
   const { text } = props;
 

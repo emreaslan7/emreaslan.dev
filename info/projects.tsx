@@ -55,7 +55,7 @@ export const projects = [
           <br />
           This Next.js-based project visualizes Solana blockchain data, and its
           modern interface, built with tools like Shadcn.ui, Tailwind CSS, and
-          Hello Moon, is inspired by the "Dog Wif Hat" meme.
+          Hello Moon, is inspired by the Dog Wif Hat meme.
         </p>
       );
     },
@@ -80,7 +80,7 @@ export const projects = [
           meaningful conversations.
           <br />
           <br />
-          Whether you're looking to stay updated on the latest trends, share
+          Whether you are looking to stay updated on the latest trends, share
           your thoughts, or connect with like-minded individuals, Twitella
           provides a seamless platform to express yourself.
         </p>
@@ -145,7 +145,7 @@ export const projects = [
     content: () => {
       return (
         <p>
-          It's 2078. Can the RoboPunks NFT save humans from destructive rampant
+          It is 2078. Can the RoboPunks NFT save humans from destructive rampant
           NFT speculation? Mint RoboPunks to find out...
           <br />
           <br />
@@ -232,7 +232,7 @@ export const projects = [
         <p>
           Experience the Rise of Bitcoin! If you had 1 bitcoin in any year, what
           would you buy? Explore the historical price increases of Bitcoin and
-          use your strategy to decide which year's investment is the best while
+          use your strategy to decide which years investment is the best while
           having fun!
           <br />
           <br />

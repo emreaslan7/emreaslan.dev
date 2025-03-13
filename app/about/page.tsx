@@ -15,7 +15,10 @@ function AboutPage() {
           </span>{" "}
           cat about {firstName}
         </p>
-        <p className="text-gray-300 lg:leading-9">
+        <p
+          className="text-gray-300 lg:leading-7"
+          style={{ whiteSpace: "pre-line" }}
+        >
           <span className="text-teal-400">
             about{firstName} <span className="text-green-500">(main)</span> $
           </span>{" "}
@@ -88,7 +91,7 @@ function AboutPage() {
   }
 
   return (
-    <Container maxWidth="max-w-4xl flex flex-col items-center justify-center mt-8">
+    <Container maxWidth="max-w-4xl flex flex-col items-center justify-center mt-8 pt-10">
       <Terminal text={aboutMeText()} />
       <Terminal text={skillsText()} />
       <Terminal text={miscText()} />

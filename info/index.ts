@@ -22,17 +22,27 @@ export const info = {
     },
     {
       emoji: "✍️",
-      text: "Writing About the Web3 Stuff",
+      text: "Writing About the web3 & AI Stuff",
     },
     {
       emoji: "📧",
       text: "emreaslan.eth@gmail.com",
     },
   ],
-  bio: "Hello, I'm Emre, focusing on smart contract development and web solutions. Intrigued by web3 tech, including zk technology. Dedicated to creating innovative projects that contribute to the tech landscape. Let's connect and explore potential collaborations.",
+  bio: `Electrical and Electronics Engineering student with a strong foundation in programming, artificial intelligence, and image processing.
+
+        Passionate about applying engineering principles to real-world challenges, with hands-on experience in AI projects, image processing, and full-stack software development.
+
+        Currently focusing on deep learning, machine learning, and blockchain development.
+
+        Seeking opportunities to further develop my technical skills and contribute to innovative solutions.
+
+        Let's connect and explore potential collaborations.`,
   skills: {
     proficientWith: [
       "javascript",
+      "python",
+      "tensorflow",
       "react",
       "nodejs",
       "express",
@@ -43,9 +53,8 @@ export const info = {
       "ethers",
       "nextjs",
       "tailwind",
-      "chakra-ui",
     ],
-    exposedTo: ["nodejs", "python", "adobe illustrator"],
+    exposedTo: ["nodejs", "adobe illustrator"],
   },
   hobbies: [
     {

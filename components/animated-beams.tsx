@@ -19,7 +19,7 @@ const GradientText = ({
   emoji?: string;
 }) => {
   return (
-    <div className="z-10 bg-opacity-100 group relative mx-auto flex items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f] ">
+    <div className="bg-white dark:bg-[#121212] z-10 bg-opacity-100 group relative mx-auto flex items-center justify-center rounded-full px-4 py-1.5 shadow-[inset_0_-8px_10px_#8fdfff1f] transition-shadow duration-500 ease-out hover:shadow-[inset_0_-5px_10px_#8fdfff3f] ">
       <span
         className={cn(
           "absolute inset-0 block h-full w-full animate-gradient rounded-[inherit] bg-gradient-to-r from-[#ffaa40] via-[#9c40ff] to-[#ffaa40] bg-[length:300%_100%] p-[1px]"
@@ -31,7 +31,6 @@ const GradientText = ({
           mask: "linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0)",
           maskComposite: "subtract",
           WebkitClipPath: "padding-box",
-          backgroundColor: "rgba(255, 255, 255,1)", // Arka planı daha az görünür hale getirmek için opaklığı azaltıyoruz
         }}
       />
       <span className="text-white">{emoji}</span>
@@ -100,10 +99,14 @@ export function AnimatedBeamAI() {
       <div className="flex size-full max-h-[250px] max-w-2xl flex-col items-stretch justify-between z-10">
         <div className="flex flex-row items-center justify-between ">
           <Card ref={div1Ref}>
-            <span className="font-medium">Machine Learning</span>
+            <span className="font-medium whitespace-nowrap text-sm">
+              Machine Learning
+            </span>
           </Card>
           <Card ref={div2Ref}>
-            <span className="font-medium">Neural Networks</span>
+            <span className="font-medium whitespace-nowrap text-sm">
+              Neural Networks
+            </span>
           </Card>
         </div>
         <div className="flex items-center justify-center">
@@ -121,10 +124,14 @@ export function AnimatedBeamAI() {
         </div>
         <div className="flex flex-row items-center justify-between">
           <Card ref={div3Ref}>
-            <span className="font-medium">Deep Learning</span>
+            <span className="font-medium whitespace-nowrap text-sm">
+              Deep Learning
+            </span>
           </Card>
           <Card ref={div4Ref}>
-            <span className="font-medium">Artificial Intelligence</span>
+            <span className="font-medium whitespace-nowrap text-sm">
+              Artificial Intelligence
+            </span>
           </Card>
         </div>
       </div>
@@ -185,7 +192,7 @@ export function AnimatedBeamCryptomath() {
     >
       <div className="flex size-full max-h-[250px] max-w-2xl flex-col items-stretch justify-between z-10">
         {/* Top row with one button */}
-        <div className="flex flex-row items-center justify-center">
+        <div className="flex flex-row items-center justify-center text-sm">
           <Card ref={div1Ref}>Cryptography</Card>
         </div>
 
@@ -205,7 +212,7 @@ export function AnimatedBeamCryptomath() {
         </div>
 
         {/* Bottom row with two buttons */}
-        <div className="flex flex-row items-center justify-between">
+        <div className="flex flex-row items-center justify-between text-sm">
           <Card ref={div2Ref}>Mathematics</Card>
           <Card ref={div3Ref}>Number Theory</Card>
         </div>

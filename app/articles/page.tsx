@@ -19,7 +19,7 @@ function ArticlesPage() {
       </div>
       <Container maxWidth="max-w-6xl">
         <div className="mt-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-y-16 gap-x-12 justify-items-center">
             {articles.map((article, index) => (
               <ArticlesCard
                 key={index}

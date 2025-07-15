@@ -7,7 +7,7 @@ export const info = {
   lastName: "Aslan",
   initials: "EA",
   avatarImage: self,
-  position: "a Web3 Developer",
+  position: "a Software Developer",
   selfPortrait: self,
   gradient: `-webkit-linear-gradient(135deg, ${colors})`,
   baseColor: colors[0],
@@ -22,7 +22,7 @@ export const info = {
     },
     {
       emoji: "✍️",
-      text: "Writing About the web3 & AI Stuff",
+      text: "Writing About the AI/ML & Web3 Stuff",
     },
     {
       emoji: "📧",
@@ -43,6 +43,7 @@ export const info = {
       "javascript",
       "python",
       "tensorflow",
+      "keras",
       "react",
       "nodejs",
       "express",
@@ -57,22 +58,22 @@ export const info = {
     exposedTo: ["nodejs", "adobe illustrator"],
   },
   hobbies: [
-    {
-      label: "reading",
-      emoji: "📖",
-    },
-    {
-      label: "music",
-      emoji: "🎧",
-    },
-    {
-      label: "swimming",
-      emoji: "🏊‍♂️",
-    },
-    {
-      label: "fitness",
-      emoji: "💪",
-    },
+    // {
+    //   label: "reading",
+    //   emoji: "📖",
+    // },
+    // {
+    //   label: "music",
+    //   emoji: "🎧",
+    // },
+    // {
+    //   label: "swimming",
+    //   emoji: "🏊‍♂️",
+    // },
+    // {
+    //   label: "fitness",
+    //   emoji: "💪",
+    // },
     // {
     //     label: 'camping',
     //     emoji: '🏕️'

@@ -1,5 +1,5 @@
 import React from "react";
-import me from "@/info/img/self.png";
+import me from "@/info/img/portrait_2025_square.png";
 import { info } from "@/info/index";
 import Image from "next/image";
 

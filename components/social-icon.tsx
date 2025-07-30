@@ -1,5 +1,5 @@
 import React from "react";
-import { SiHashnode } from "react-icons/si";
+import { SiHashnode, SiKaggle } from "react-icons/si";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 
@@ -39,6 +39,14 @@ function SocialIcon() {
         className="hover:text-blue-600 transition-colors duration-200"
       >
         <FaLinkedinIn />
+      </Link>
+      <Link
+        target="_blank"
+        href="https://www.kaggle.com/emreaslan7"
+        rel="noreferrer"
+        className="hover:text-blue-400 transition-colors duration-200"
+      >
+        <SiKaggle />
       </Link>
     </div>
   );
